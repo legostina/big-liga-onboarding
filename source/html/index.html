@@ -8,6 +8,11 @@
 </head>
 <body>
 
+  <div class="loader">
+    <img src="/img/content/logo-loader.png" class="loader__logo" alt="Лига А - фронтенд аутсорс">
+    <p class="loader__hint">Нажмите на Enter</p>
+  </div>
+
   <div style="display: none;">
     @@include("build/img/sprite_auto.svg")
   </div>
@@ -16,7 +21,18 @@
     @@include("source/html/base/header.html")
 
     <main>
+      <h1 class="visually-hidden">Лига А - фронтенд аутсорс</h1>
       <div class="container">
+        <h2 class="visually-hidden">Наше направление</h2>
+        <div class="container__block">
+          <p class="container__slogan">Вёрстка и фронтенд любой сложности </p>
+          <svg></svg>
+          <p class="container__mission">для digital‑агентств, продуктовых компаний и фриланс‑команд</p>
+        </div>
+        <div class="container__blue">
+          <svg></svg>
+          <p class="container__mission">для digital‑агентств, продуктовых компаний и фриланс‑команд</p>
+        </div>
       </div>
     </main>
 
