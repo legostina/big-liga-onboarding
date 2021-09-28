@@ -1,6 +1,6 @@
 .container {
   width: 100%;
-  max-width: 1920px;
+  max-width: 1024px;
   margin: 0 auto;
   padding: 0 40px;
 
@@ -13,12 +13,63 @@
   }
 
   @include viewport--sm {
-    padding: 0 16px;
+    padding: 0 35px;
+    position: fixed;
+    left: 0;
+    top: 74px;
+    right: 0;
+    bottom: 0;
+    width: 100%;
   }
 
   &--no-padding {
     @include viewport--sm {
       padding: 0;
     }
+  }
+}
+
+.container-none {
+  display: none;
+}
+
+.container__block {
+  display: none;
+  flex-direction: row;
+  animation-duration: 3s;
+  animation-name: slideIn;
+  animation-iteration-count: 1;
+  animation-direction: 3s;
+}
+
+.container__dragon {
+  display: block;
+
+  @include viewport--md {
+    display: none;
+  }
+}
+
+.container__slogan {
+  max-width: 560px;
+  font-size: 96px;
+  line-height: 96px;
+  color: $color-neon-blue;
+  margin-top: 108px;
+
+  @include viewport--md {
+    max-width: 640px;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0;
+    width: 100%;
   }
 }

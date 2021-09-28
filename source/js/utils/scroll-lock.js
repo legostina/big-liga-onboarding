@@ -1,4 +1,4 @@
-const body = document.querySelector('body');
+const body = document.querySelector('body.scss');
 
 // eslint-disable-next-line consistent-return
 const getScrollbarWidth = () => {

@@ -1,0 +1,22 @@
+.link-up {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 1px;
+    right: -9px;
+    background: url('/img/content/icon-nav.svg') no-repeat;
+    width: 10px;
+    height: 9px;
+    fill: $color-neon-blue;
+  }
+}
+
+.link-up__mobile {
+  @include viewport--sm {
+    &::after {
+      display: none;
+    }
+  }
+}

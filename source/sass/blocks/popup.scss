@@ -1,0 +1,29 @@
+.popup__mission {
+  width: 352px;
+  text-align: left;
+  font-size: 30px;
+  line-height: 40px;
+  color: $color-default-white;
+}
+
+.popup__blue {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: $color-neon-blue;
+  text-align: center;
+  overflow: hidden;
+  transition: 1s;
+  opacity: 0;
+  right: 100%;
+}
+
+.popup__blue--show {
+  display: flex;
+  opacity: 1;
+  right: 0;
+}
