@@ -1,0 +1,24 @@
+.toggle-closed {
+  display: none;
+
+  @include viewport--md {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin-top: 26px;
+    background: none;
+    border: none;
+    outline: none;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: -3px;
+      left: 4px;
+      width: 30px;
+      height: 30px;
+      background: url('/img/svg/icon-close.svg') no-repeat;
+    }
+  }
+}

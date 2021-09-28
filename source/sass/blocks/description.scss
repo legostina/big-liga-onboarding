@@ -1,0 +1,24 @@
+.description {
+  padding-top: 50px;
+
+  @include viewport--md {
+    display: none;
+  }
+}
+
+.description__dragon {
+  display: block;
+  margin-left: 33px;
+
+  @include viewport--md {
+    display: none;
+  }
+}
+
+.description__mission {
+  max-width: 351px;
+  font-size: 30px;
+  line-height: 40px;
+  color: $color-default-black;
+  margin-left: 33px;
+}

@@ -1,0 +1,31 @@
+.nav-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  top: 74px;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background: $color-default-white;
+}
+
+.nav-mobile .site-list {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0;
+}
+
+.nav-mobile .site-list__item {
+  height: 60px;
+  padding: 0;
+}
+
+.nav-mobile .menu__link {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 56px;
+}
